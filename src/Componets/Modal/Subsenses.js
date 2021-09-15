@@ -1,8 +1,7 @@
 import React from 'react'
 
 const Subsenses=({subsenses})=>{
-     console.log("data subsenses",subsenses)
-
+    
     return(
         <div>
               {subsenses.map((ele,i)=>{

@@ -8,7 +8,6 @@ const ListVocabulary=({words})=>{
 
      return(
         <div>
-            <h1>ListVocabulary</h1>
             <ListVocabularyItem  data={data}/>
         </div>
     )

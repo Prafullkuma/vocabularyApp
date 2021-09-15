@@ -22,16 +22,15 @@ const ListVocabularyItem=({data})=>{
         }
         setBasicDetails(detail)
     };
-    
     const handleClose = () => {
         setOpen(false);
     };
-   
+    
     return(
         <div>
-            {data.map((ele)=>{
+            {data.map((ele,i)=>{
                 return (
-                    <div key={ele._id} onClick={()=>handleClickOpen(ele._id,ele.name)}> 
+                    <div key={i} onClick={()=>handleClickOpen(ele._id,ele.name)} style={{cursor:"pointer"}}> 
                         <h1 >{ele.name}</h1>
                              <ListVocabularyItemContent lexicalEntries={ele.lexicalEntries}/>   
                     </div>     

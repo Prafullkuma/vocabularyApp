@@ -4,8 +4,8 @@ function App() {
   
    return (
        <div className="App">
-             <h1>Vocabulary App</h1>
-             <Vocabulary/>
+            <h1>Vocabulary App</h1>
+            <Vocabulary/>
        </div>
   );
 }

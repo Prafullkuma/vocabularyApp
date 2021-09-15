@@ -7,16 +7,10 @@ import './style.css'
 
 const store=configureStore
 
-console.log("Result",store.getState())
-
-store.subscribe(()=>{
-   console.log("after update",store.getState())
-})
-
 ReactDOM.render(
   <Provider store={store}>
      <App />
   </Provider>,
-  document.getElementById('root')
+   document.getElementById('root')
 );
 
