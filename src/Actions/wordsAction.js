@@ -4,7 +4,7 @@ export const ADD_WORD="ADD_WORD"
 
 export const getAllWords=()=>{
     return (dispatch)=>{ 
-       axios.get('http://localhost:8000/api/oxferd/getAllWords')
+       axios.get('https://oxferdbackend.herokuapp.com/api/oxferd/getAllWords')
         .then((res)=>{
             const result=res.data
             dispatch({type:ALL_WORDS,payload:result})
@@ -19,7 +19,7 @@ export const AddWordAction=(word_id,successMessage)=>{
       
     
     return(dispatch)=>{
-        axios.get(`http://localhost:8000/api/oxferd/addWord?word_id=${word_id}`)
+        axios.get(`https://oxferdbackend.herokuapp.com/api/oxferd/addWord?word_id=${word_id}`)
         .then((res)=>{
             const result=res.data
               if(!result.error){
