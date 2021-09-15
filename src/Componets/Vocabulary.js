@@ -23,8 +23,7 @@ const Vocabulary=()=>{
     },[words])
 
     return(
-         <div>  
-             <h1>Words List</h1>
+         <div style={{margin:'20px'}}>
             {mainWord.length===0 ?
                    <p>...loading </p>
                     :<ListVocabulary words={mainWord} />

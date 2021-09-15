@@ -2,7 +2,7 @@ import React from 'react'
 import {getDefination } from '../Helper'
 
 const ListVocabularyItemContent=({lexicalEntries})=>{
-    
+      
     return(
         <div>
            {lexicalEntries.map((ele,i)=>{
