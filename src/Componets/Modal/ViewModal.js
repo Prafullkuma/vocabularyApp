@@ -7,7 +7,6 @@ import PartOfSpeechAndOrigin from './PartOfSpeechAndOrigin'
 const ViewModal=({_id,data})=>{
 
     const result=getSpeechAndOrigin(_id,data)
-
     
     return(
         <div>

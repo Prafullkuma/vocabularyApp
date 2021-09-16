@@ -19,6 +19,7 @@ const AddVocabualaryForm=({forSubmission})=>{
     };
 
     const handleClose = () => {
+        setErrorObj({})
         setOpen(false);
     };
     const handleChange=(e)=>{
@@ -36,17 +37,19 @@ const AddVocabualaryForm=({forSubmission})=>{
         runValidator()
         
         if(Object.keys(error).length===0){
+               
              setErrorObj({})
                 const formData={
                     word_id:word
                 }
                 forSubmission(formData)
-                setWord('')
-                
+                setWord('')          
          }else{
+             setOpen(true)
              setErrorObj(error)
          }
     }
+
     return(
         <div>
             <Button variant="outlined" color="secondary" onClick={handleClickOpen}>
